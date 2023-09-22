@@ -1,0 +1,53 @@
+.LoadingIndicator {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+
+  &__indicator {
+    display: inline-flex;
+    border-top: 0.4rem solid var(--dark-blue);
+    border-right: 0.4rem solid var(--dark-blue);
+    border-bottom: 0.4rem solid var(--dark-blue);
+    border-left: 0.4rem solid transparent;
+    border-radius: 100rem;
+
+    &--inline {
+      width: 1rem;
+      height: 1rem;
+      border-width: 0.1rem;
+    }
+
+    &--white {
+      border-top-color: var(--white);
+      border-right-color: var(--white);
+      border-bottom-color: var(--white);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &--whiteLarge {
+      border-top: 0.6rem solid var(--white);
+      border-right: 0.6rem solid var(--white);
+      border-bottom: 0.6rem solid var(--white);
+      border-left: 0.6rem solid transparent;
+      width: 3rem;
+      height: 3rem;
+      border-width: 0.4rem;
+    }
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    animation: rotate linear infinite 1s;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

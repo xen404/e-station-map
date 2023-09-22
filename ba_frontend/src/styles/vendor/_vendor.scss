@@ -1,0 +1,50 @@
+// @import "~leaflet-draw/dist/leaflet.draw.css"
+
+.Toastify {
+  &__toast-container {
+    position: absolute !important;
+    left: calc((100vw + 32rem) / 2);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 70rem;
+  }
+  &__toast {
+    box-shadow: 0rem 0.4rem 0.4rem rgb(0, 0, 0, 25%) !important;
+    border-radius: 0.5rem;
+    padding: 2rem 2rem 2rem 5.8rem;
+    &--error {
+      background: #fff3f3;
+      border: 0.3rem solid var(--error-red);
+    }
+  }
+}
+
+.Toast {
+  padding: 0;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__error {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    color: var(--error-red);
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    img {
+      position: absolute;
+      left: 0;
+
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
+
+  &__error-message {
+    color: var(--black);
+    font-size: 1.4rem;
+  }
+}

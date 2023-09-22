@@ -1,0 +1,27 @@
+.SliderControls {
+    display: flex;
+  button {
+    cursor: pointer;
+    background: white;
+    color: var(--dark-blue);
+    border: 0.1rem solid var(--dark-blue);
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+    margin-right: 0.2rem;
+
+    &:hover {
+      background: #eeeeee;
+    }
+    &:active {
+      background: #dddddd;
+    }
+
+    &:disabled {
+      border: 0.1rem solid #afafaf;
+      cursor: not-allowed;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+  }
+}

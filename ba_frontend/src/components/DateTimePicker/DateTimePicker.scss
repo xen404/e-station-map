@@ -1,0 +1,53 @@
+.DateTimePicker {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  &__datepickerInput,
+  &__timepickerInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  &__datepickerInput {
+    margin-top: 1rem;
+  }
+  &__datepickerInput,
+  &__timepickerInput {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+    min-height: 3.5rem;
+    min-width: 14rem;
+    background: white;
+    border: 0.1rem solid #cfcecf;
+    border-radius: 0.3rem;
+  }
+
+  &__timepickerInput {
+  }
+  &__closeBtn {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    margin: 0;
+    background-color: white;
+    border-color: black;
+    border: var(--dark-blue);
+    color: black;
+    padding: 0px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(40%) sepia(0%) saturate(1000%) hue-rotate(95deg);
+  }
+}

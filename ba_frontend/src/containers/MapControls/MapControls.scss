@@ -1,0 +1,46 @@
+.MapControls {
+  position: absolute;
+  z-index: 9000;
+  right: 1rem;
+  top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-bottom: 1rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border: 0.1rem solid var(--seperation-grey);
+    border-radius: 0.3rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.4rem;
+    height: 3.4rem;
+    border: none;
+    border-bottom: 0.1rem solid var(--seperation-grey);
+    cursor: pointer;
+    background: white;
+    font-size: 2rem;
+
+    &:last-of-type {
+      border: none;
+    }
+
+    &:hover {
+      background: #ececec;
+    }
+
+    &:active {
+      background: var(--seperation-grey);
+    }
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

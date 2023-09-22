@@ -1,0 +1,49 @@
+.Fieldset {
+  border: none;
+  position: relative;
+  display: flex;
+
+  width: 100%;
+
+  &__input {
+    position: absolute;
+    z-index: -1;
+
+    &:checked {
+      & + .Fieldset__label {
+        background: #5e5e5e;
+        border-color: #5e5e5e;
+        color: white;
+      }
+    }
+
+    &:disabled {
+      & + .Fieldset__label {
+        color: rgb(110, 110, 110);
+        background: rgb(228, 228, 228);
+        cursor: not-allowed;
+      }
+    }
+  }
+  &__label {
+    display: flex;
+    background: white;
+    height: 3.5rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 1.4rem;
+    border-top: 0.1rem solid #cfcecf;
+    border-bottom: 0.1rem solid #cfcecf;
+
+    &:first-of-type {
+      border-left: 0.1rem solid #cfcecf;
+      border-radius: 0.3rem 0 0 0.3rem;
+    }
+    &:last-of-type {
+      border-right: 0.1rem solid #cfcecf;
+      border-radius: 0 0.3rem 0.3rem 0;
+    }
+  }
+}

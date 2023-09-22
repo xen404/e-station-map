@@ -1,0 +1,24 @@
+.Cluster {
+  &__marker {
+    color: white;
+
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    transform: translate(-50%, -50%);
+
+    &--1 {
+      background: #53bb46;
+    }
+
+    &--2 {
+      background: #1a9216;
+    }
+
+    &--3 {
+      background: #0a6301;
+    }
+  }
+}

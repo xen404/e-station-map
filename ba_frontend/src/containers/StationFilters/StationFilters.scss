@@ -1,0 +1,41 @@
+.StationFilters_hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.StationFilters {
+  border-top: 0.1rem solid #cfcecf;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding-top: 1rem;
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0rem 4.5rem 2.5rem 4.5rem;
+  }
+}
+
+.tooltip-btn {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #767575;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1;
+  font-size: small;
+}

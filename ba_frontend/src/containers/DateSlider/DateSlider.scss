@@ -1,0 +1,103 @@
+.DateSlider {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 1rem;
+    min-width: 100rem;
+    min-height: 5rem;
+    border: none;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    background: white;
+    z-index: 1000;
+  }
+
+  &__containerOverlay {
+    position: absolute;
+    padding: 1rem;
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    background: rgba(80, 77, 77, 0.428);
+    z-index: 1010;
+  }
+
+  &__dateContainer {
+    display: flex;
+    align-items: center;
+
+    & > *:first-child {
+      min-width: 13rem;
+    }
+    & > *:last-child {
+      cursor: pointer;
+      &:hover {
+        background: var(--hover-grey);
+      }
+      &:active {
+        background: var(--seperation-grey);
+      }
+      &:focus {
+        border: 0.1rem solid #0d69e3;
+      }
+    }
+  }
+  &__DateTimePickerContainer {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    min-width: 10rem;
+    min-height: 5rem;
+    border: none;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    background: white;
+    align-items: flex-start;
+    z-index: 1100;
+  }
+
+  &__slider {
+    position: relative;
+    padding: 0.6rem 4rem 1rem 4rem;
+    min-width: 100%;
+  }
+
+  &__startMark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 0.5rem;
+    font-size: small;
+    color: #9c9b9c;
+  }
+
+  &__endMark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 0.5rem;
+    font-size: small;
+    color: #9c9b9c;
+  }
+&__spinner {
+  position: absolute;
+    right: 0.8rem;
+    top: 0.6rem;
+}
+  
+}

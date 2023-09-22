@@ -1,0 +1,96 @@
+.Header {
+  box-shadow: 0rem 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  transition: height 3s ease-in-out;
+  border-radius: 0.3rem;
+  &__controls {
+    display: flex;
+  }
+
+  &__titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    h1 {
+      font-size: 3rem;
+    }
+    & > *:first-child {
+      padding: 1.5rem 0rem 1.5rem 0rem;
+    }
+    & > *:last-child {
+      padding: 0rem 2rem 2.5rem 2rem;
+    }
+  }
+
+  &__filterButton {
+    cursor: pointer;
+    height: 3.5rem;
+    background: white;
+    color: var(--dark-blue);
+    border: 0.1rem solid #cfcecf;
+    border-radius: 0.3rem;
+    margin-right: 2rem;
+    min-width: 3.4rem;
+
+    &:hover {
+      background: #eeeeee;
+    }
+    &:active {
+      background: #dddddd;
+    }
+
+    &:disabled {
+      border: 0.1rem solid #afafaf;
+      cursor: not-allowed;
+    }
+  }
+
+  &__filterButton_active {
+    cursor: pointer;
+    height: 3.5rem;
+    background: #5e5e5e;
+    color: var(--dark-blue);
+    border: 0.1rem solid #cfcecf;
+    border-radius: 0.3rem;
+    margin-right: 2rem;
+    min-width: 3.4rem;
+
+    &:hover {
+      background: #767575;
+    }
+    &:active {
+      background: #dddddd;
+    }
+
+    &:disabled {
+      border: 0.1rem solid #afafaf;
+      cursor: not-allowed;
+    }
+  }
+
+  &__icon_active {
+    filter: invert(100%);
+  }
+
+  &__environment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.5rem;
+    & > *:first-child {
+      padding-right: 1rem;
+    }
+  }
+
+  &__environmentType {
+    background: #e2002a;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 1.2rem;
+    font-weight: 100;
+    padding: 0.1rem 1.2rem;
+  }
+}

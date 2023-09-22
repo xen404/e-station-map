@@ -1,0 +1,80 @@
+.LayerControls {
+  position: absolute;
+  z-index: 9000;
+
+  right: 1rem;
+  top: 14rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__article {
+    position: absolute;
+    background: white;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    right: 0rem;
+
+    padding: 1rem;
+  }
+
+  &__fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    border-bottom: 0.1rem solid var(--seperation-grey);
+    cursor: pointer;
+    background: white;
+    font-size: 2rem;
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.3rem;
+
+    &:hover {
+      background: #ececec;
+    }
+
+    &:active {
+      background: var(--seperation-grey);
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #767575;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  width: 12rem;
+  text-align: center;
+  z-index: 1;
+  font-size: 8px;
+}
+

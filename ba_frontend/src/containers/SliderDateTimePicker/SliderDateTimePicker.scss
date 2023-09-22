@@ -1,0 +1,68 @@
+.SliderDateTimePicker {
+  &__containerOverlay {
+    position: absolute;
+    padding: 1rem;
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    background: rgba(80, 77, 77, 0.428);
+    z-index: 1010;
+  }
+
+  &__dateContainer {
+    display: flex;
+    align-items: center;
+
+    & > *:first-child {
+      min-width: 13rem;
+    }
+    & > *:last-child {
+      cursor: pointer;
+      &:hover {
+        background: var(--hover-grey);
+      }
+      &:active {
+        background: var(--seperation-grey);
+      }
+      &:focus {
+        border: 0.1rem solid #0d69e3;
+      }
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    min-width: 10rem;
+    min-height: 5rem;
+    border: none;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    background: white;
+    align-items: flex-start;
+    z-index: 1100;
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #767575;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1;
+    font-size: small;
+  }
+  
+}
+

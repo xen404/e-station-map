@@ -1,0 +1,61 @@
+$distanceFromSidebar: 3rem;
+
+.StationDialog {
+  top: 50%;
+  left: calc(32rem + $distanceFromSidebar);
+  transform: translateY(-50%);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2rem;
+    dt {
+      color: var(--dark-blue);
+      font-size: 1.2rem;
+    }
+    dd {
+      font-size: 1.4rem;
+      color: var(--black);
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  }
+
+  &__action {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__label {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  &__select {
+    display: inline-flex;
+    background: white;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #cfcecf;
+    min-width: 20rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    padding-left: 0.8rem;
+  }
+
+  &__loading-indicator {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
